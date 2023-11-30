@@ -229,7 +229,7 @@ async function run() {
         });
 
 
-        app.get('/donor/create-donation-request', async (req, res) => {
+        app.get('/donor/donation-request', async (req, res) => {
             const products = await donorCollection.find({}).toArray();
             res.json(products);
         });
